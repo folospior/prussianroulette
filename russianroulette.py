@@ -87,8 +87,8 @@ else:
 	idiot()
 
 def quit():
-	sys.exit()
 	x()
+	sys.exit()
 
 sure = input("""\nAre you TOTALLY sure? This program WILL delete your operating system's core components!!\n
 THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR UNUSABLE OR BRICKED MACHINES! RUN AT YOUR OWN RISK! (yes/no)\n""")
