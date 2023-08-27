@@ -1,5 +1,5 @@
 # pussianroulette
-Ever wanted to play *russian roulette* on your PC? Now you can! With russian roulette, you can make sure you're anxious about what happens on your PC at all times!
+Ever wanted to play *russian roulette* on your PC? Now you can! With pussianroulette, you can make sure you're anxious about what happens on your PC at all times!
 # Requirements 
 - Windows 8.1 or above
 - Python 3.11 installed
