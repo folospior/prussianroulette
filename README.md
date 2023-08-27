@@ -4,6 +4,7 @@ Ever wanted to play *russian roulette* on your PC? Now you can! With russian rou
 - Windows 7 or above
 - Python installed
 - Visual Studio Redistributable 2022
+- LEGACY BIOS ENABLED **(CRUCIAL)**
 # License
 This program is licensed under the WTFPL license. The full text is:
 ```
