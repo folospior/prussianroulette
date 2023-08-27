@@ -5,6 +5,10 @@ Ever wanted to play *russian roulette* on your PC? Now you can! With russian rou
 - Python 3.11 installed
 - Visual Studio Redistributable 2022
 - LEGACY BIOS ENABLED **(CRUCIAL)**
+
+# WARNING
+## THIS PROGRAM IS MALWARE. THE AUTHOR DOES NOT TAKE RESPONSIBILITY FOR BROKEN MACHINES. THIS PROGRAM WAS CREATED FOR EDUCATIONAL PURPOSES ONLY, HENCE WHY THE SOURCE CODE WAS SHARED. RUN AT YOUR OWN RISK!
+
 # License
 This program is licensed under the WTFPL license. The full text is:
 ```
