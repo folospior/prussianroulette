@@ -107,7 +107,10 @@ guess = input("Let's play a game of russian roulette! Type a number between 1 an
 if set(guess).difference(digits):
 	idiot()
 
-guess = int(guess)
+try:
+	guess = int(guess)
+except ValueError:
+	idiot()
 
 if guess > 6 or guess <= 0:
 	idiot()
