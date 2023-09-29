@@ -78,26 +78,32 @@ def quit():
 	pfdelete()
 	sys.exit()
 
-confirm =  input("Do you want to play a game? This program IS MALWARE and WILL MAKE YOUR COMPUTER UNUSABLE! (yes/no)\n")
-confirm = confirm.lower()
-if confirm == "no":
-	os.system("cls")
-	quit()
-elif confirm == "yes":
-	os.system("cls")
-else:
-	idiot()
+def confirm():
+	confirm =  input("Do you want to play a game? This program IS MALWARE and WILL MAKE YOUR COMPUTER UNUSABLE! (yes/no)\n")
+	confirm = confirm.lower()
+	if confirm == "no":
+		os.system("cls")
+		quit()
+	elif confirm == "yes":
+		os.system("cls")
+	else:
+		confirm()
 
-sure = input("""\nAre you TOTALLY sure? This program WILL delete your operating system's core components!!\n
-THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR UNUSABLE OR BRICKED MACHINES! RUN AT YOUR OWN RISK! (yes/no)\n""")
-sure = sure.lower()
-if sure == "no":
-	os.system("cls")
-	quit()
-elif sure == "yes":
-	os.system("cls")
-else:
-	idiot()
+confirm()
+
+def sure():
+	sure = input("""\nAre you TOTALLY sure? This program WILL delete your operating system's core components!!\n
+	THE AUTHOR DOES NOT TAKE ANY RESPONSIBILITY FOR UNUSABLE OR BRICKED MACHINES! RUN AT YOUR OWN RISK! (yes/no)\n""")
+	sure = sure.lower()
+	if sure == "no":
+		os.system("cls")
+		quit()
+	elif sure == "yes":
+		os.system("cls")
+	else:
+		sure()
+
+sure()
 
 print(logo)
 guess = input("Let's play a game of russian roulette! Type a number between 1 and 6...\n")
