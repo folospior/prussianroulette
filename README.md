@@ -10,19 +10,4 @@ Ever wanted to play *russian roulette* on your PC? Now you can! With pussianroul
 ## THIS PROGRAM IS MALWARE. THE AUTHOR DOES NOT TAKE RESPONSIBILITY FOR BROKEN MACHINES. THIS PROGRAM WAS CREATED FOR EDUCATIONAL PURPOSES ONLY, HENCE WHY THE SOURCE CODE WAS SHARED. RUN AT YOUR OWN RISK!
 
 # License
-This program is licensed under the WTFPL license. The full text is:
-```
-    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                    Version 2, December 2004 
-
- Copyright (C) 2004 Sam Hocevar <sam@hocevar.net> 
-
- Everyone is permitted to copy and distribute verbatim or modified 
- copies of this license document, and changing it is allowed as long 
- as the name is changed. 
-
-            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
-
-  0. You just DO WHAT THE FUCK YOU WANT TO.
-```
+This program is licensed under the MIT License. Details can be found in [LICENSE](LICENSE).
